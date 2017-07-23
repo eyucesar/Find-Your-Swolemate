@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Find Your Swolemate</title>
+  <!-- Latest compiled and minified CSS & JS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <script src="https://use.fontawesome.com/b668c475b8.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+  <div class="container"><br>
+    
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title text-center">Here is Your Swolemate</h4>
+        </div>
+        <div class="modal-body">
+          <p></p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+    <div class="row">
+      <div class="col-sm-12 col-md-12">
+        <div class="jumbotron text-center">
+          <h1>Find Your Swolemate</h1>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class="col-sm-12 col-md-12 text-center">
+        <div class="form-group about">
+          <h4>Your Name</h4>
+          <input type="text" class="form-control" name id="name" required>
+        </div>
+        <div class="form-group about">
+          <h4>Link to Your Image</h4>
+          <input type="text" class="form-control" name id="imgUrl" required>
+        </div>
+      </div>
+    </div>
+
+    <div class="questions row">
+      <div class="col-sm-12 col-md-12 text-center">
+        <h3>Questions</h3>
+        <form action="">
+          <label for="ques1">1- First rule of working out is "never skip a Monday".</label>
+            <select class="form-control" id="ques1" required>
+              <option value="" selected disabled>Please select</option>
+              <option value=1>1 (strongly disagree)</option>
+              <option value=2>2</option>
+              <option value=3>3</option>
+              <option value=4>4</option>
+              <option value=5>5 (strongly agree)</option>
+            </select>
+        
+          <label for="ques2">2- You feel quilty when you miss a workout.</label>
+            <select class="form-control" id="ques2" required>
+              <option value="" selected disabled>Please select</option>
+              <option value=1>1 (strongly disagree)</option>
+              <option value=2>2</option>
+              <option value=3>3</option>
+              <option value=4>4</option>
+              <option value=5>5 (strongly agree)</option>
+            </select>
+
+          <label for="ques3">3- You exercise ___ a week.</label>
+            <select class="form-control" id="ques3" required>
+              <option value="" selected disabled>Please select</option>
+              <option value=1>Once </option>
+              <option value=2>Twice</option>
+              <option value=3>3 times</option>
+              <option value=4>4 times</option>
+              <option value=5>5 times</option>
+            </select>
+
+          <label for="ques4">4- You would rather exercise than hang out with friends on a Friday evening.</label>
+            <select class="form-control" id="ques4" required>
+              <option value="" selected disabled>Please select</option>
+              <option value=1>1 (strongly disagree)</option>
+              <option value=2>2</option>
+              <option value=3>3</option>
+              <option value=4>4</option>
+              <option value=5>5 (strongly agree)</option>
+            </select>
+
+          <label for="ques5">5- You have a reputation for being exercise obsessed.</label>
+            <select class="form-control" id="ques5" required>
+              <option value="" selected disabled>Please select</option>
+              <option value=1>1 (strongly disagree)</option>
+              <option value=2>2</option>
+              <option value=3>3</option>
+              <option value=4>4</option>
+              <option value=5>5 (strongly agree)</option>
+            </select>
+        
+          <label for="ques6">6- You believe that your gym buddy is your biggest motivation.</label>
+            <select class="form-control" id="ques6" required>
+              <option value="" selected disabled>Please select</option>
+              <option value=1>1 (strongly disagree)</option>
+              <option value=2>2</option>
+              <option value=3>3</option>
+              <option value=4>4</option>
+              <option value=5>5 (strongly agree)</option>
+            </select>
+        
+          <label for="ques7">7- Your philosophy is "no pain, no gain".</label>
+            <select class="form-control" id="ques7" required>
+              <option value="" selected disabled>Please select</option>
+              <option value=1>1 (strongly disagree)</option>
+              <option value=2>2</option>
+              <option value=3>3</option>
+              <option value=4>4</option>
+              <option value=5>5 (strongly agree)</option>
+            </select>
+
+          <label for="ques8">8- You would rather lift weigths than run.</label>
+            <select class="form-control" id="ques8" required>
+             <option value="" selected disabled>Please select</option>
+              <option value=1>1 (strongly disagree)</option>
+              <option value=2>2</option>
+              <option value=3>3</option>
+              <option value=4>4</option>
+              <option value=5>5 (strongly agree)</option>
+            </select>
+        
+          <label for="ques9">9- You hate that person who does bicep curls in the squat rack.</label>
+            <select class="form-control" id="ques9" required>
+              <option value="" selected disabled>Please select</option>
+              <option value=1>1 (strongly disagree)</option>
+              <option value=2>2</option>
+              <option value=3>3</option>
+              <option value=4>4</option>
+              <option value=5>5 (strongly agree)</option>
+            </select>
+        
+          <label for="ques10">10- Even if it means being away from your swolemate, you believe rest days are important.</label>
+            <select class="form-control" id="ques10" required>
+              <option value="" selected disabled>Please select</option>
+              <option value=1>1 (strongly disagree)</option>
+              <option value=2>2</option>
+              <option value=3>3</option>
+              <option value=4>4</option>
+              <option value=5>5 (strongly agree)</option>
+            </select>
+        
+        <button type="submit" class="btn btn-danger btn-lg" id="submitbtn"><i class="fa fa-check" aria-hidden="true"></i>&nbsp;&nbsp;Submit</button>
+      </form>
+      
+      </div>
+    </div>
+
+    <br><br><footer class="footer text-center"><a href="/api/friends">API Friends List</a> | <a href="https://github.com/eyucesar/Find-Your-Swolemate" target="_blank">GitHub Repo</a><br><br><br>&copy;2017 Ebru Yucesar</footer><br>
+
+  </div><br>
+  
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script type="text/javascript">
+
+  $(document).ready(function() {
+
+    $("#submitbtn").on("click", function() {
+      event.preventDefault();
+      //once the submit btn is clicked, look at the name and img fields and warn the user if those fields are empty and set the answered question counter back to zero
+      counter = 0;
+      var nameField = $("#name").val().trim();
+      var imgField = $("#imgUrl").val().trim();
+      if (nameField.length === 0 || imgField.length === 0) {
+        alert("Please fill out all the fields!");
+        $("#name").css("border", "1px solid red");
+        $("#imgUrl").css("border", "1px solid red");
+      } else if (nameField.length > 0 && imgField.length > 0) {
+          var count = $(".form-control :selected").length;
+          //function that checks if the questions are answered
+          validateForm();
+          //if all the questions are answered, it creats the new friend object etc.
+          if (counter === 10) {
+            //look at the values of each question and and push those values into the allScores array
+            var questions = ["#ques1", "#ques2", "#ques3", "#ques4", "#ques5", "#ques6", "#ques7", "#ques8", "#ques9", "#ques10"];
+            var allScores = [];
+
+            for (var i = 0; i < questions.length; i++) {
+              allScores.push(parseInt($(questions[i]).val()));
+            }
+
+            //create the new friend object
+            var newMate = {
+              name: $("#name").val().trim(),
+              photo: $("#imgUrl").val().trim(),
+              scores: allScores
+            }
+
+            //add the new friend object to the api/friends route
+            $.post("/api/friends", newMate,
+              function(data) {
+                // Clear the form when submit
+                $("#name").val("");
+                $("#imgUrl").val("");
+                //clear the selected options
+                $('.form-control option').prop('selected', function() {
+                  return this.defaultSelected;
+                });
+              });
+
+            //run this function to see the best match
+            matchFriends();
+          } else {
+            alert("Please answer all the questions!");
+          }
+      } else {
+        alert("Please fill out all the fields!");
+      }
+
+      function matchFriends() {
+
+        var currentURL = window.location.origin;
+
+        //get all of the friendData that is stored on the api/friends route and do the following
+        $.ajax({ url: currentURL + "/api/friends", method: "GET" })
+          .done(function(friendData) {
+
+            //this array will hold the difference between each user's answers
+            var resultsArr = [];
+            //this array will be created with each loop interation for each friend, after the resultsArr is spliced
+            var diffBtwFriend = [];
+            //this array will hold all the difference between the last added user and the rest of the users
+            var allDiffArr = [];
+            
+            function diff(a, b) { 
+              return Math.abs(a, b);
+            }
+
+            //first loop will iterate over each friend, second loop will iterate over each friend's scores
+            for (var i = 0; i < friendData.length - 1; i++) {
+              for (var j = 0; j < 10; j++) {
+                var diffnum = diff(parseInt(friendData[i].scores[j]) - parseInt(newMate.scores[j]));
+                //the difference between responses will be pushed to resultsArr
+                resultsArr.push(diffnum);
+              }
+              var diffBtwFriend = resultsArr.splice(0, 10);
+              //total will hold the sum of all score differences between each friend
+              var total = 0;
+              for (var k in diffBtwFriend) {
+                total += parseInt(diffBtwFriend[k]);
+              }
+              //total will be pushed to allDiffArray
+              allDiffArr.push(total);
+              //smallest number is found in the array
+              var smallestDiff = Math.min(...allDiffArr);
+              //and if the total number is the same as the smallest number, that means the current friend that we are iterating over is our match
+              if (total === smallestDiff) {
+                var closestMatch = friendData[i];
+              }
+              console.log("difference between you and number " + (i + 1) + " friend is " + total);
+            }
+
+            //customize the content of the bootstrap modal
+            var mymodal = $('#myModal');
+            mymodal.modal();
+            mymodal.find('.modal-title').html("<p>Your swolemate is: " + closestMatch.name + "</p>");
+            mymodal.find('.modal-body').html("<img src='" + closestMatch.photo + "' alt='" + closestMatch.name + "'class='img-responsive center-block'>");
+            mymodal.modal('show');
+
+          });
+      }
+
+    });
+  
+    //function that sets the answered question counter to zero and if the selected option has a value of more than zero, adds to the counter.
+    var counter = 0;
+    function validateForm() {
+      $('select').each(function() {
+        if ($(this).val() > 0) {
+          counter++;
+        }
+      });
+    }
+
+  });
+
+  </script>
+</body>
+</html>

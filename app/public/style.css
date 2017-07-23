@@ -1,0 +1,86 @@
+body {
+	width: 100%;
+}
+
+.container {
+	width: 80%;
+	margin-top: 20px;
+	background-color: #bfe5e5;
+	border-radius: 10px;
+}
+
+h3 {
+	text-align: center;
+}
+
+h4 {
+	font-size: 18px;
+}
+
+.jumbotron {
+	text-align: center;
+	background-color: #cfeda1;
+	background: url(fitness6.jpg) no-repeat center center;
+    -webkit-background-size: cover;    
+    background-size: cover;
+    height: 300px;
+}
+
+.jumbotron h1 {
+	font-weight: bolder;
+	font-size: 75px;
+	text-shadow: 4px 4px 8px #d9534f;
+	color: white;
+	margin-top: 55px;
+}
+
+#surveybtn {
+	width: 200px;
+	height: auto;
+	font-size: 20px;
+}
+
+footer {
+	font-size: 12px;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+	font-size: 14px;
+}
+
+.about {
+	width: 300px;
+	display: inline-block;
+	margin: 0 20px 0 20px;
+}
+
+.about h4 {
+	display: block;
+	text-align: center;
+}
+
+label {
+	font-size: 16px;
+	margin-top: 10px;
+}
+
+#submitbtn {
+	width: 250px;
+	margin-top: 20px;
+	font-size: 20px;
+}
+
+.questions {
+	width: 80%;
+	margin: 0 auto;
+}
+
+option {
+	text-align: center;
+}
+
+p {
+	font-size: 30px;
+}
